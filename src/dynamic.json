@@ -1,0 +1,131 @@
+{
+  "dynamic": [
+    {
+      "id": 1,
+      "name": "wieke",
+      "email": "wieke@gmail.com",
+      "password": "12345",
+      "gender": "Female",
+      "dob": "2018-11-28T17:00:00.000Z",
+      "country": "UK",
+      "term": true
+    },
+    {
+      "id": 2
+    },
+    {
+      "name": "wwww",
+      "email": "www@gmail.com",
+      "password": "wqeguqwe",
+      "gender": "Male",
+      "dob": "2018-11-12T17:00:00.000Z",
+      "country": "UK",
+      "term": true,
+      "id": 3
+    }
+  ],
+  "regConfig": [
+    {
+      "type": "input",
+      "label": "Username",
+      "inputType": "text",
+      "name": "name",
+      "value": null,
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Name Required"
+        },
+        {
+          "name": "pattern",
+          "validator": "^[a-zA-Z]+$",
+          "message": "Accept only text"
+        },
+        {
+          "name": "min",
+          "validator": 6,
+          "message": "C:\Users\Emerio-Training4\Documents\dyniamicform\dynamic.json 6 character"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Email Address",
+      "inputType": "email",
+      "name": "email",
+      "validations": [
+      {
+        "name": "required",
+        "validator": "required",
+        "message": "Email Required"
+      },
+      {
+        "name": "pattern",
+        "validator": "'^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}$'",
+        "message": "Invalid email"
+      }
+      ]
+    },
+    {
+      "type": "input",
+      "label": "Password",
+      "inputType": "password",
+      "name": "password",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "required",
+          "message": "Password Required"
+        }
+      ]
+    },
+    {
+      "type": "radiobutton",
+      "label": "Gender",
+      "name": "gender",
+      "options": ["Male", "Female"],
+      "value": "Male"
+    },
+    {
+      "type": "date",
+      "label": "DOB",
+      "name": "dob",
+      "validations": [
+        {
+          "name": "required",
+          "validator": "Validators.required",
+          "message": "Date of Birth Required"
+        }
+      ],
+      "value":"2018-11-12T17:00:00.000Z"
+    },
+    {
+      "type": "select",
+      "label": "Country",
+      "name": "country",
+      "value": "UK",
+      "options": ["India", "UAE", "UK", "US"]
+    },
+    {
+      "type": "checkbox",
+      "label": "Accept Terms",
+      "name": "term",
+      "value": true
+    },
+    {
+      "type": "buttonsubmit",
+      "label": "Save",
+      "typebtn": "submit",
+      "action": "onSubmit",
+      "click": "submit"
+    },
+    {
+      "type": "button",
+      "label": "Cancel",
+      "typebtn": "button",
+      "action": "cancel",
+     "click": "click"
+    }
+  ]
+}
